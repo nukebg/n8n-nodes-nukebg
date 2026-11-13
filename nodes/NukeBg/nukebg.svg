@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <pattern id="c" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#fff"/>
+      <rect width="4" height="4" fill="#dfe3ea"/>
+      <rect x="4" y="4" width="4" height="4" fill="#dfe3ea"/>
+    </pattern>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f86ff"/>
+      <stop offset="1" stop-color="#1f4fe0"/>
+    </linearGradient>
+    <clipPath id="s"><rect width="64" height="64" rx="16"/></clipPath>
+  </defs>
+  <g clip-path="url(#s)">
+    <rect width="64" height="64" fill="url(#c)"/>
+    <path d="M0 0H64V22C46 26 30 40 24 64H0Z" fill="url(#g)"/>
+  </g>
+  <circle cx="40" cy="38" r="11" fill="#0f1115"/>
+  <circle cx="40" cy="38" r="15.5" fill="none" stroke="#0f1115" stroke-width="2" stroke-dasharray="3.2 3.2"/>
+</svg>

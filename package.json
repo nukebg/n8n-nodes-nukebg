@@ -1,0 +1,66 @@
+{
+  "name": "n8n-nodes-nukebg",
+  "version": "1.0.0",
+  "description": "n8n node for NukeBG: remove image backgrounds, remove objects and upscale images. A replacement for remove.bg in n8n workflows.",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "background-removal",
+    "remove-background",
+    "remove.bg",
+    "removebg",
+    "image",
+    "nukebg"
+  ],
+  "license": "MIT",
+  "homepage": "https://nukebg.com/docs",
+  "author": {
+    "name": "VOLODS LTD",
+    "email": "nukebg@volods.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nukebg/n8n-nodes-nukebg.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "strict": true,
+    "credentials": [
+      "dist/credentials/NukeBgApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/NukeBg/NukeBg.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "^0.56.4",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^21.1.0",
+    "typescript": "5.9.2",
+    "n8n-workflow": "^2.16.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/nukebg/n8n-nodes-nukebg/issues",
+    "email": "nukebg@volods.com"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
