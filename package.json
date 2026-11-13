@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-nukebg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "n8n node for NukeBG: remove image backgrounds, remove objects and upscale images. A replacement for remove.bg in n8n workflows.",
   "keywords": [
     "n8n-community-node-package",
@@ -32,7 +32,9 @@
     "prepublishOnly": "n8n-node prerelease"
   },
   "files": [
-    "dist"
+    "dist",
+    "!dist/tsconfig.tsbuildinfo",
+    "!dist/**/*.map"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,

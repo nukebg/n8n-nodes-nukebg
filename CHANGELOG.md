@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Published from GitHub Actions with npm provenance.
+- Smaller package: build cache and source maps are no longer included.
+
 ## 1.0.0
 
 - Remove Background, Remove Objects, Upscale and Get Credits operations.
